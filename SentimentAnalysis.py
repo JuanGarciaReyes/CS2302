@@ -41,7 +41,7 @@ def process_comments(neg,pos,neu,comments):
             neu.append(i.body)
         elif(negative >positive and negative > neutral):
             neg.append(i.body)
-        process_comments(neg,pos,neu,comments[0].replies)
+        process_comments(neg,pos,neu,i.replies)
          
 
  
