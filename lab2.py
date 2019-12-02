@@ -1,3 +1,4 @@
+import time
 class Node:
     def __init__(self, item=None, next=None):
         self.item = item
@@ -284,12 +285,16 @@ def read(LL):
 def main():
     LL = LinkedList()
     read(LL)
-    LL.solution1
+    start_time = time.time()
+    LL.solution1()
     #LL.solution2()
-    LL.print_list()
+    #print("--- %s seconds ---" % (time.time() - start_time))
+    #LL.print_list()
+    #print("--- %s seconds ---" % (time.time() - start_time))
     LL.solution3()
     LL.print_list()
-    LL.solution4()
+    print("--- %s seconds ---" % (time.time() - start_time))
+    #LL.solution4()
 
 
 
