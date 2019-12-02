@@ -38,6 +38,6 @@ def problem2 (triangle):
 string1 = "monkey"
 string2 = "mykong"
 triangle = [[2], [3,4], [6,5,7], [4,1,8,3]]
-print("Edit Distance of " + string1 + " and " + string2 + " is " + str(edit_distance(string1, string2, len(string1), len(string2))))
+print(edit_distance(string1, string2, len(string1), len(string2)))
 print("problem 2")
 print (problem2(triangle))
