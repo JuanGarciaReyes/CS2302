@@ -215,7 +215,7 @@ class LinkedList:
         self.repeated()
     
     def solution3(self):
-        self.head = merge_sort(self.head)
+        self.head = mergesort(self.head)
         self.repeated()
         
     def solution4(self):
@@ -232,7 +232,7 @@ class LinkedList:
 def mergesort(head):
     if head is None or head.next is None:
         return head
-    l1, l2 = divide_lists(head)
+    l1, l2 = divide(head)
     l1 = mergesort(l1)
     l2 = mergesort(l2)
     head = merge(l1, l2)
@@ -252,7 +252,7 @@ def merge(l1, l2):
         temp.next = merge(l1, l2.next)
     return temp
         
-def divide_lists(head):
+def divide(head):
     moving = head                     
     initial = head
     if moving is not None:
