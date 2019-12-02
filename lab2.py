@@ -94,10 +94,10 @@ class LinkedList:
     
 
     def remove_same(self, index):
-        if index < 0:  # Don't do anything if index is invalid
+        if index < 0:
             return
 
-        if index == 0:  # Handling special case - when the item to remove is the head
+        if index == 0: 
             self.remove_first()
             return
 
